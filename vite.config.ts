@@ -4,6 +4,19 @@ import tailwindcss from "@tailwindcss/vite";
 import fs from "node:fs";
 import path from "node:path";
 
+const siteConfiguration = {
+  title: "BelliSmile — Sérum correcteur de couleur dentaire",
+  description:
+    "Le sérum violet BelliSmile neutralise visuellement les reflets jaunes pour un sourire plus lumineux en quelques secondes.",
+  language: "fr",
+  robots: {
+    index: true,
+  },
+  icons: {
+    icon: "/favicon.png",
+  },
+};
+
 // Vite config — https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   // .figma/make/deploy-preview passes `--mode development` for cached-preview builds.
